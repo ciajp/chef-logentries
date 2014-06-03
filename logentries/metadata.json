@@ -9,8 +9,6 @@
     "ubuntu": ">= 0.0.0"
   },
   "dependencies": {
-    "apt": ">= 0.0.0",
-    "yum": ">= 0.0.0"
   },
   "recommendations": {
   },
