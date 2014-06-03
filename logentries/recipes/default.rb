@@ -1,7 +1,6 @@
-include_recipe 'apt'
-
 case node['platform']
   when "ubuntu"
+    include_recipe 'apt'
     apt_repository 'logentries' do
       uri 'http://rep.logentries.com/'
       components ['precise', 'main']
