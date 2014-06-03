@@ -1,12 +1,12 @@
 case node['platform']
-  when "ubuntu"
-    include_recipe 'apt'
-    apt_repository 'logentries' do
-      uri 'http://rep.logentries.com/'
-      components ['precise', 'main']
-      keyserver 'hkp://pgp.mit.edu:80'
-      key 'C43C79AD'
-    end
+  # when "ubuntu"
+  #   include_recipe 'apt'
+  #   apt_repository 'logentries' do
+  #     uri 'http://rep.logentries.com/'
+  #     components ['precise', 'main']
+  #     keyserver 'hkp://pgp.mit.edu:80'
+  #     key 'C43C79AD'
+  #   end
   when "amazon"
     cookbook_file "logentries.repo" do
       source "logentries.repo"

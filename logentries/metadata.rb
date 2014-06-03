@@ -8,10 +8,10 @@ version          "0.1.4"
 
 recipe "logentries", "Set up the apt repository and install the logentries package"
 
-depends "apt"
+# depends "apt"
 depends "yum"
 
-%w{ubuntu amazon}.each do |os|
+%w{amazon}.each do |os|
   supports os
 end
 
